@@ -74,6 +74,7 @@ if [ $? == 0 ]
 fi
 
 ${DIR}/bin/sync.sh
+
 echo ""
 echo -e "If you need to schedule sync, please add a line to your crontab like below. In this example i do a full reimport every 15min."
 echo ""
