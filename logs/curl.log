@@ -1,4 +1,0 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   221  100   187  100    34    282     51 --:--:-- --:--:-- --:--:--   282100   221  100   187  100    34    282     51 --:--:-- --:--:-- --:--:--   282
-{"took":600,"timed_out":false,"_indices":{"_all":{"found":10614,"deleted":10614,"missing":0,"failed":0},"glpi_tasks":{"found":10614,"deleted":10614,"missing":0,"failed":0}},"failures":[]}
