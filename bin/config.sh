@@ -15,7 +15,10 @@ INDEX=(glpi_tickets glpi_tasks)                         #
 #                                                       #
 # ElasticSearch Host                                    #
 ES=localhost:9200                                       #
-#                                                       #
+#          						#
+# Kibana Version                                        #
+KIB="4.3.0"						#
+#							#
 # Colors                                                #
 G="\033[32m"                                            #
 W="\033[0m"                                             #
@@ -51,7 +54,25 @@ if [ $? == 0 ]
   else
   echo -e "${R}==> NOK - Check ${DIR}/logs/curl.log for more informations${W}"
 fi
+   echo -e "${Y}####    Puts [${v}] indices to Kibana config:${W}"
+  /usr/bin/curl -XPUT ''${ES}'/.kibana/index-pattern/'${v}'' -d '{"title" : "${v}",  "timeFieldName": "date"}' &>${DIR}/logs/curl.log
+if [ $? == 0 ]
+  then
+  echo -e "${G}==> OK${W}"
+  else
+  echo -e "${R}==> NOK - Check ${DIR}/logs/curl.log for more informations${W}"
+fi
 done
+
+echo -e "${Y}####    Puts default index to Kibana config${W}"
+/usr/bin/curl -XPUT ''${ES}'/.kibana/config/'${KIB}'' -d '{"defaultIndex" : "glpi_tickets"}' &>${DIR}/logs/curl.log
+if [ $? == 0 ]
+  then
+  echo -e "${G}==> OK${W}"
+  else
+  echo -e "${R}==> NOK - Check ${DIR}/logs/curl.log for more informations${W}"
+fi
+
 ${DIR}/bin/sync.sh
 echo ""
 echo -e "If you need to schedule sync, please add a line to your crontab like below. In this example i do a full reimport every 15min."
