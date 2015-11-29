@@ -26,7 +26,7 @@ R="\033[31m"						#
 
 for v in ${INDEX[@]}
   do
-echo -e "${Y}#### Delete docs from index [${v}] in ElasticSearch:${W}"
+echo -e "${Y}####    Delete docs from index [${v}] in ElasticSearch:${W}"
 /usr/bin/curl -XDELETE 'http://'${ES}'/'${v}'/_query' -d' { "query" : { "match_all": {} } }' &>${DIR}/logs/curl.log
 if [ $? == 0 ]
   then
@@ -34,7 +34,7 @@ if [ $? == 0 ]
   else
   echo -e "${R}==> NOK - Check ${DIR}/logs/curl.log for more informations${W}"
 fi
-echo -e "${Y}#### Sync [${v}] data from MySQL:${W}"
+echo -e "${Y}####    Sync [${v}] data from MySQL:${W}"
 /opt/logstash/bin/logstash agent --config ${DIR}/conf/logstash/${v}.conf &>${DIR}/logs/logstash.log
 if [ $? == 0 ]
   then
