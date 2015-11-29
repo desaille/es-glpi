@@ -77,7 +77,7 @@ Par exemple toutes les 15 Minutes => */15 * * * * /opt/es-glpi/bin/sync.sh &>/de
 
 ## Kibana
 
-Se connecter sur Kibana pour commencer Ã  modéliser les donnèes, importer si besoin les examples stockés dans /opt/es-glpi/conf/kibana/
+Se connecter sur Kibana pour commencer à modéliser les donnèes, importer si besoin les examples stockés dans /opt/es-glpi/conf/kibana/
 
 
 
