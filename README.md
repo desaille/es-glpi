@@ -46,7 +46,7 @@ Testé sur Ubuntu 14.04 (containeur LXC)
 - Télécharger le Driver JDBC pour MySQL : http://dev.mysql.com/downloads/connector/j/
 - Extraire le dossier et copier le fichier "mysql-connector-java-5.x.jar" dans "/opt/logstash/jdbc-drivers". 
 
-Le répertoire jdbc-drivers est à créér, possibilité de stocker le driver a n'importe quel autre emplacement, mais dans ce cas penser a modifier les fichiers de configurations logstash "dans /es-glpi/conf/logstash" 
+Le répertoire jdbc-drivers est à créér, possibilité de stocker le driver a n'importe quel autre emplacement, mais dans ce cas penser a modifier les fichiers de configurations logstash dans "/es-glpi/conf/logstash" 
 
 - Installer le plugin delete-by-query pour ES (https://www.elastic.co/blog/core-delete-by-query-is-a-plugin)
 Sur Ubuntu => /usr/share/elasticsearch/bin/plugin install delete-by-query
