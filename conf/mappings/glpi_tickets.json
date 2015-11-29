@@ -1,0 +1,77 @@
+{
+"properties": {
+          "@timestamp": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "@version": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Catégorie": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "DID": {
+            "type": "long"
+          },
+          "Demandeur": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Entité": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Objet": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Source": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Status": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "TID": {
+            "type": "long"
+          },
+          "Technicien": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Type": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "actiontime": {
+            "type": "double"
+          },
+          "closedate": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "date": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "id": {
+            "type": "long"
+          },
+          "temp prise en compte": {
+            "type": "double"
+          },
+          "temps attente": {
+            "type": "long"
+          },
+          "temps cloture": {
+            "type": "long"
+          },
+          "temps resolution": {
+            "type": "double"
+          }
+        }
+      }
+      

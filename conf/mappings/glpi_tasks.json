@@ -1,0 +1,61 @@
+{
+  "properties": {
+          "@timestamp": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "@version": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Categorie": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "DID": {
+            "type": "long"
+          },
+          "Date Tache": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "Date Ticket Cloture": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "Demandeur": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Entité": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Objet": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Source": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Tache": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Technicien": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "Type": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "actiontime": {
+            "type": "double"
+          },
+          "id": {
+            "type": "long"
+          }
+        }
+      }
