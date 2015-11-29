@@ -1,4 +1,4 @@
-# Es-GLPI
+# ES-GLPI
 Module de synchro entre GLPI et ElasticSearch.
 
 L'idée est de synchroniser des données depuis GLPI vers ElasticSearch afin de pouvoir faire des tableau de bords avec Kibana. 
@@ -8,7 +8,7 @@ On utilise Logstash pour aller chercher les données dans le serveur MySQL hébe
 
 ### Description :
 
-/es-glpi/bin 
+#####/es-glpi/bin/
 
 config.sh :
   - Création automatique des index et des mappings dans ElasticSearch (suppression si existant)
@@ -18,3 +18,15 @@ config.sh :
 sync.sh :
   - Suppression des données existantes dans les index prédéfinis
   - Import de toutes les données depuis la base MySQL
+
+#####es-glpi/conf/logstash/
+
+Fichiers de configurations passés en paramètres à Logstash pour aller récupérer le contenu voulu de la base GLPI via les drivers JDBC. C'est dans ces fichiers que l'on paramètre l'utilisateur et le mot de passe de connexion à la base
+
+#####/es-glpi/conf/sql/
+
+Requêtes SQL permettant de récupérer le jeu de donner à injecter dans ElasticSearch
+
+#####/es-glpi/conf/mappings/
+
+Fichiers de mappings ElasticSearch en cohérence avec les données extraites de la base GLPI. 
