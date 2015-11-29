@@ -30,3 +30,13 @@ Requêtes SQL permettant de récupérer le jeu de donner à injecter dans Elasti
 #####/es-glpi/conf/mappings/
 
 Fichiers de mappings ElasticSearch en cohérence avec les données extraites de la base GLPI. 
+
+## Prérequis : 
+- ElasticSearch 2.x
+- Logstash 2.x
+- JDBC Driver for MySQL
+
+## Installation 
+Testé sur Ubuntu 14.04 (containeur LXC)
+
+
