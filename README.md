@@ -1,1 +1,2 @@
-# es-glpi
+# Es-glpi
+Module de synchro entre GLPI et ElasticSearch
