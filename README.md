@@ -4,7 +4,7 @@ Module de synchro entre GLPI et ElasticSearch.
 L'idée est de synchroniser des données depuis GLPI vers ElasticSearch afin de pouvoir faire des tableau de bords avec Kibana. 
 
 ### Fonctionnement : 
-On utilise Logstash pour aller chercher les données dans le serveur MySQL hébergeant la base de donnée GLPI et les envoyer à ElasticSearch. 
+On utilise Logstash pour aller chercher les données dans le serveur MySQL hébergeant la base de donnée GLPI et les envoyer à  ElasticSearch. 
 
 ### Description :
 
@@ -12,7 +12,7 @@ On utilise Logstash pour aller chercher les données dans le serveur MySQL hébe
 
 config.sh :
   - Création automatique des index et des mappings dans ElasticSearch (suppression si existant)
-  - Import des données depuis MySQL à l'aide de requêtes SQL prédéfinies et envoi dans ElasticSearch
+  - Import des données depuis MySQL à  l'aide de requetes SQL prédéfinies et push dans ElasticSearch
   - Execution du script de synchronisation
 
 sync.sh :
@@ -21,15 +21,15 @@ sync.sh :
 
 /es-glpi/conf/logstash/
 
-Fichiers de configurations passés en paramètres à Logstash pour aller récupérer le contenu voulu de la base GLPI via les drivers JDBC. C'est dans ces fichiers que l'on paramètre l'utilisateur et le mot de passe de connexion à la base
+Fichiers de configurations passés en paramètres à Logstash pour aller récupérer le contenu voulu de la base GLPI via les drivers JDBC. C'est dans ces fichiers que l'on paramètre l'utilisateur et le mot de passe de connexion à la base de données. 
 
 /es-glpi/conf/sql/
 
-Requêtes SQL permettant de récupérer le jeu de donner à injecter dans ElasticSearch
+Requètes SQL permettant de récupérer le jeu de données à injecter dans ElasticSearch
 
 /es-glpi/conf/mappings/
 
-Fichiers de mappings ElasticSearch en cohérence avec les données extraites de la base GLPI. 
+Fichiers de mappings ElasticSearch. 
 
 /es-glpi/conf/kibana/
 
@@ -77,7 +77,7 @@ Par exemple toutes les 15 Minutes => */15 * * * * /opt/es-glpi/bin/sync.sh &>/de
 
 ## Kibana
 
-Se connecter sur Kibana pour commencer à mod�eliser les données, importer si besoin les examples stockés dans /opt/es-glpi/conf/kibana/
+Se connecter sur Kibana pour commencer Ã  modéliser les donnèes, importer si besoin les examples stockés dans /opt/es-glpi/conf/kibana/
 
 
 
