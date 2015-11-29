@@ -31,6 +31,10 @@ Requêtes SQL permettant de récupérer le jeu de donner à injecter dans Elasti
 
 Fichiers de mappings ElasticSearch en cohérence avec les données extraites de la base GLPI. 
 
+/es-glpi/conf/kibana/
+
+Exemples de visualisations et de dashboards, à importer depuis l'interface de Kibana.
+
 ## Prérequis : 
 - ElasticSearch 2.x
 - Plugin delete-by-query for ElasticSearch
@@ -71,7 +75,9 @@ Executer le script config.sh pour paramétrer ElasticSearch et lancer une Synchr
 Ajouter au besoin une tache cron appellant sync.sh pour paramétrer une synchronisation régulière
 Par exemple toutes les 15 Minutes => */15 * * * * /opt/es-glpi/bin/sync.sh &>/dev/null
 
+## Kibana
 
+Se connecter sur Kibana pour commencer à mod�eliser les données, importer si besoin les examples stockés dans /opt/es-glpi/conf/kibana/
 
 
 
