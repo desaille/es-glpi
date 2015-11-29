@@ -1,6 +1,6 @@
 SELECT
     Gt.id,
-    Gt.date as "Date Tache",
+    Gt.date,
     G.closedate as "Date Ticket Cloture",
     E.name as "Entité",
     (SELECT Ur.users_id FROM glpi_tickets_users Ur where Ur.type = 1 and Ur.tickets_id = G.id limit 1) as "DID",
