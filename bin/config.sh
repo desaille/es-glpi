@@ -17,7 +17,7 @@ INDEX=(glpi_tickets glpi_tasks)                         #
 ES=localhost:9200                                       #
 #          						#
 # Kibana Version                                        #
-KIB="4.3.0"						#
+KIB="4.4.1"						#
 #							#
 # Colors                                                #
 G="\033[32m"                                            #
