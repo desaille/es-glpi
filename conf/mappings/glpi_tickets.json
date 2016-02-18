@@ -8,41 +8,41 @@
             "type": "string",
             "index": "not_analyzed"
           },
-          "Catégorie": {
+          "catégorie": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "DID": {
+          "did": {
             "type": "long"
           },
-          "Demandeur": {
+          "demandeur": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Entité": {
+          "entité": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Objet": {
+          "objet": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Source": {
+          "source": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "TID": {
+          "tid": {
             "type": "long"
           },
-          "Technicien": {
+          "technicien": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "index": "not_analyzed"
           },
