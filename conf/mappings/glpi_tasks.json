@@ -8,46 +8,46 @@
             "type": "string",
             "index": "not_analyzed"
           },
-          "Categorie": {
+          "categorie": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "DID": {
+          "did": {
             "type": "long"
           },
           "date": {
             "type": "date",
             "format": "strict_date_optional_time||epoch_millis"
           },
-          "Date Ticket Cloture": {
+          "date ticket cloture": {
             "type": "date",
             "format": "strict_date_optional_time||epoch_millis"
           },
-          "Demandeur": {
+          "demandeur": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Entité": {
+          "entité": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Objet": {
+          "objet": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Source": {
+          "source": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Tache": {
+          "tache": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Technicien": {
+          "technicien": {
             "type": "string",
             "index": "not_analyzed"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "index": "not_analyzed"
           },
