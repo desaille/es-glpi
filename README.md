@@ -66,6 +66,7 @@ Télécharger l'archive zip ou cloner le dépôt via git. Copier le répertoire 
 - Modifier les deux fichiers de configurations. Les paramètres à modifier sont @IP du server MySQL + Login Mot de passe. Faire attention au chemin du driver JDBC
 
 /es-glpi/bin/
+- Modifier la valeur KIB avec la version de kibana installée
 - Modifier au besoin dans les deux fichier la valeur ES= ElasticSearch URL
 
 ## Utilisation : 
