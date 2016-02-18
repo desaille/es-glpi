@@ -2,7 +2,7 @@
 
 #########################################################
 #		ES-GLPI - Sync Shell Script		#
-#			by desaille.fr			#
+#			   desaille.fr			#
 #							#
 # Full Path of es-glpi					#
 # If you change this directory, you have to update it	#
